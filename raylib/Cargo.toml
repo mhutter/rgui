@@ -1,0 +1,20 @@
+[package]
+name = "rgui-raylib"
+version = "0.1.0"
+edition = "2024"
+authors = ["Manuel Hutter (https://github.com/mhutter)"]
+license = "MIT"
+repository = "https://github.com/mhutter/rgui-raylib"
+
+[dependencies]
+rand = "0.9.0"
+raylib = "5.0.2"
+
+[profile.release]
+strip = true
+lto = true
+codegen-units = 1
+panic = "abort"
+
+[lints.rust]
+unsafe_code = "forbid"

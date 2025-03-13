@@ -1,0 +1,9 @@
+*
+!.cargo
+!.sqlx
+!Cargo.*
+!LICENSE*
+!migrations
+!rust-toolchain*
+!src
+!templates
